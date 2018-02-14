@@ -11,7 +11,7 @@ namespace Project_Altius
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        
+        AltiusClient cl;
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -27,7 +27,7 @@ namespace Project_Altius
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            cl = new AltiusClient();
             base.Initialize();
         }
 
@@ -39,7 +39,8 @@ namespace Project_Altius
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+         
+            cl.connect(345);
             // TODO: use this.Content to load your game content here
         }
 
@@ -63,7 +64,7 @@ namespace Project_Altius
                 Exit();
 
             // TODO: Add your update logic here
-
+            cl.checkformessages();
             base.Update(gameTime);
         }
 

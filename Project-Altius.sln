@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project-Altius", "Project-Altius\Project-Altius.csproj", "{1269DB5C-40AC-4603-9056-91F844BBB87E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AltiusServer", "AltiusServer\AltiusServer.csproj", "{D04DF2D0-9816-4F9E-A9D9-E80D2FCE700A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1269DB5C-40AC-4603-9056-91F844BBB87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1269DB5C-40AC-4603-9056-91F844BBB87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1269DB5C-40AC-4603-9056-91F844BBB87E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D04DF2D0-9816-4F9E-A9D9-E80D2FCE700A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D04DF2D0-9816-4F9E-A9D9-E80D2FCE700A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D04DF2D0-9816-4F9E-A9D9-E80D2FCE700A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D04DF2D0-9816-4F9E-A9D9-E80D2FCE700A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
