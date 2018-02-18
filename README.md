@@ -1,18 +1,17 @@
 # Project-Altius
-A game, built from the ground up to have multiplayer support.
-The game is built on lidgren - a c# internet framework,  
-where I adjusted the default peer to peer to work with a client server architecture.
+A framework which will hopefully act as a starting point for any monogame client server thing I make.
 
-# So whats this game about
-Currently, nothing, Originally it was going to be a dungeon crawler where you delve deeper into the dungeon ,  
-but that doesn't work very well in client server,  
-so I'm re-evaluating my ideas. A tactical rpg seems cool.
+# How will it work?
+It will , quite simply, provide functions creating an extremely high level way to send int's or any other datatype, to the server  
+or to any other clients in paticular.  
+You will hopefully be able to flag certain messages as a certain type, which the server will be able to discern using yet another function.  
+A big plan is eventually incoporating the ability to define how a class can be sent over wifi (first part will be this field, second part will be that field etc) which you can copy and paste (or put in a file) for the server to interpret and easily  
+with one function, or put simply, defining templates for how a class is sent over
 
-# Then whats the point if there isn't even a game yet?
-Currently many components are in place (the basic networking) and all of these are easily re-usable in other projects.  
-In a few minutes I could download the repo and take out the two networking classes and shove them into some other project.
-
-# Where did the name come from
-According to google translate altius was latin for deeper,so for a dungeon delving game it suited,  
-this is wrong obviously, altius is latin for higher, but the name stuck and is a good general codename for a game in my eyes.
-The name will eventually change(maybe) to something better.
+# overall structure plan?
+in the client , something like this
+```c#
+sendMessage(server,myPlayer,myPlayerTemplate);
+myPlayer.update();
+```
+and in the server, some code to parse that class using the ```myPlayerTemplate``` and send that info to everyone else
